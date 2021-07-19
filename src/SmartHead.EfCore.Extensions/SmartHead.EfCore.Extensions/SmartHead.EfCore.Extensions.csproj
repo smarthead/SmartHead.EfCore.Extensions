@@ -2,6 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+		<AssemblyName>SmartHead.EfCore.Extensions</AssemblyName>
+        <IsPackable>true</IsPackable>
+        <Authors>Dmitry Dmitriev</Authors>
+        <PackageProjectUrl>https://github.com/smarthead/SmartHead.EfCore.Extensions</PackageProjectUrl>
+        <Version Condition="$(Configuration) != Debug">0.0.$(GITHUB_RUN_NUMBER)</Version>
+        <Company>SmartHead</Company>
+        <IsTestProject>false</IsTestProject>
+        <Description>SmartHead.EfCore.Extensions</Description>
     </PropertyGroup>
 
     <ItemGroup>
