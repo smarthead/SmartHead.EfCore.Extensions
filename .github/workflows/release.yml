@@ -30,7 +30,7 @@ jobs:
       run: |
         cd src/
         echo $GITHUB_RUN_NUMBER
-        dotnet pack -c Release
+        dotnet pack SmartHead.EfCore.Extensions -c Release
     - name: Push package to nuget
       env:
         NUGET_KEY: ${{ secrets.NUGET_KEY }}
